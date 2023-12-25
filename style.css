@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.main-image {
+    margin-top: 2rem;
+    width: 420px;
+}
+
+.logo {
+    margin: 2rem 0;
+}
+
+.head-style {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 1.1rem;
+}
+
+.head-style span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+}
+
+.sub-text {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.input-field {
+    padding: 1rem 1.8rem;
+    border-radius: 1.7rem;
+    border: 1px solid #222;
+    outline: none;
+    width: 130%;
+}
+
+.input-flex {
+    /* margin-bottom: 3rem; */
+    display: flex;
+    gap: 7rem;
+}
+
+.btn-primary {
+    padding: 1rem 3rem;
+    border-radius: 1.8rem;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.error-text {
+    color: hsl(354, 100%, 66%);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+.btn-primary:hover {
+    box-shadow: hsl(223, 100%, 88%) 0px 10px 20px -4px, hsl(223, 100%, 88%) 0px 10px 5px -4px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.icon{
+    border-radius: 50%;
+    padding: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: hsl(0, 0%, 59%);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 27em) {
+    .head-style {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .input-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .btn-primary {
+        width: 80%;
+    }
+    .input-field {
+        width: 80%;
+    }
+    .main-image{
+        width: 340px;
+    }
+}
